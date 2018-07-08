@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+[[ -d bin/lib ]] || {
+  printf "Please run this script from the project's root\n"
+  exit 1
+}
+
+set +e
+source bin/lib/loader
+set -e
+
+export def_ruby_ver="2.4.2"
+export dep_dir="./cmake/.arduino-cmake"
+export dep_url="https://github.com/arduino-cmake/arduino-cmake"
+export root=$(pwd)
+
+help $@
+setup

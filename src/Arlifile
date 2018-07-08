@@ -1,0 +1,20 @@
+# vi:syntax=yaml
+version: 2.0.0
+libraries_path: "./libraries"
+lock_format: cmake
+device:
+  board: uno
+  cpu: atmega328p
+  libraries:
+    hardware:
+      - name: Wire
+dependencies:
+  - name: Adafruit Motor Shield V2 Library
+  - name: NewPing
+  - name: BackSeatDriver
+    url: https://github.com/kigster/back-seat-driver
+    folder: libraries/BackSeatDriver 
+  - name: BackSeatDriver_DCMotorAdapter
+    url: https://github.com/kigster/back-seat-driver
+    folder: libraries/BackSeatDriver_DCMotorAdapter
+    

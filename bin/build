@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+[[ -d bin/lib ]] || {
+  printf "Please run this script from the project's root\n"
+  exit 1
+}
+
+set +e
+source bin/lib/loader
+set -e
+
+export root=$(pwd)
+
+help $@
+build $@

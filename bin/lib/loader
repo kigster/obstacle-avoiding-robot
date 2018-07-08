@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+for file in $(ls -1 bin/lib/*.bash); do 
+  source $file
+done
+
