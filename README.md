@@ -7,6 +7,12 @@ Based on the BackSeatDriver library.
 To build this project, run:
 
 ```bash
-bin/do setup
-bin/do build
+# run this only once
+bin/setup
+
+# and then build
+bin/build
+
+# and to clean
+bin/build clean
 ```
