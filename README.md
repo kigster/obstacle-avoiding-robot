@@ -1,6 +1,6 @@
 # Vehicle that Avoids Obstacles
 
-Based on the BackSeatDriver library.
+Based on the [BackSeatDriver library](https://github.com/kigster/back-seat-driver/blob/master/README.md).
 
 ## Building
 
